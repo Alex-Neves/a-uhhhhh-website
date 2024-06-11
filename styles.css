@@ -1,0 +1,14 @@
+.header img{
+    align:left;
+}
+
+.header h1{
+}
+
+.header{
+    border-bottom-color: black;
+    border-style: inset;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
+}
