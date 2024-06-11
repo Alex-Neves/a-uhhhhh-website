@@ -1,14 +1,28 @@
-.header img{
-    align:left;
+body{
+    background-color: black;
 }
 
-.header h1{
+header img{
+    align:left;
+    margin-bottom: 1px;
 }
 
 .header{
-    border-bottom-color: black;
+    border-bottom-color: white;
     border-style: inset;
     border-left-style: hidden;
     border-right-style: hidden;
     border-top-style: hidden;
+    background-color: black;
+}
+
+.sub-heading{
+    color: white;
+    background-color: black;
+    font-size: xx-large;
+    text-align: center;
+    border-bottom: solid;
+    border-color: white;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
