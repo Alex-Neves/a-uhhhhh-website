@@ -8,12 +8,6 @@ body{
     src: url(/Users/alexn/Desktop/Personal-Coding-Projects/zFirst-website/Various-assets/Aerodynamic-aGag.otf);
 }
 
-header img{
-    align:left;
-    margin: 0;
-    padding: 0;
-}
-
 .header{
     border-color: rgb(65, 114, 1);
     border-style: solid;
@@ -21,15 +15,39 @@ header img{
     margin:0;
 }
 
+.header bigdan{
+    align:left;
+    margin: 0;
+    padding: 0;
+}
+
+.search-icon{
+    position: fixed;
+    top:81px;
+    left:350px;
+    background:none;
+    margin:0;
+}
+
+.header input[type=text]{
+    border: none;
+    font-size: 17px;
+    height: 40px;
+    width: 25%;
+    padding-left: 60px;
+    position: fixed;
+    top:80px;
+    left:350px;
+}
+
 .sub-heading{
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    color: rgb(135, 250, 119);
+    background:none;
     font-size: xx-large;
     text-align: center;
     border-bottom: solid;
-    border-color: white;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    border:none;
+    font-family: Aerodynamic;
 }
 
 button{
@@ -39,7 +57,15 @@ button{
     background: -webkit-linear-gradient(yellow, #b05200);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-right: 10px;
+}
+
+button:hover{
+    font-size: x-large;
+    border:none;
+    font-family: 'Aerodynamic', sans-serif;
+    background: -webkit-linear-gradient(rgb(151, 151, 0), #6b3200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar{
@@ -61,8 +87,8 @@ ul{
 
 li{
     display: inline;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 7px;
     padding-bottom: 7px;
 
@@ -76,7 +102,7 @@ li{
   .dropdown-content {
     display: none;
     position: absolute;
-    width: 100%;
+    width: auto;
     overflow: auto;
 }
 
@@ -92,13 +118,12 @@ li{
     padding: 5px;
     text-decoration: none;
     font-family: 'Aerodynamic', sans-serif;
-    background: -webkit-linear-gradient(yellow, #b05200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     text-align: left;
     
 }
 
 .dropdown-content a:hover{
-    background-color: rgb(38, 67, 0);
+    background-color: rgb(23, 41, 0);
+    color: white;
+    transition: 500ms;
 }
