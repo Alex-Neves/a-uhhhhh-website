@@ -1,7 +1,6 @@
 body{
     background-color: rgb(255, 255, 255);
     margin:0;
-    overflow-x: hidden;
 }
 
 @font-face {
@@ -14,7 +13,6 @@ body{
     border-style: solid;
     background-color: rgb(56, 99, 0);
     margin:0;
-    width:auto;
 }
 
 .header bigdan{
@@ -73,7 +71,7 @@ button:hover{
 .navbar{
     border:none;
     margin: 0;
-    width: auto;
+    width: 100%;
     display: inline-block;
     border-color: rgb(65, 114, 1);
     border-style: solid;

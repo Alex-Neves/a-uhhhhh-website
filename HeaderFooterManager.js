@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <Title>Test Site</Title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <special-header>
-            <div class="header">
+class SpecialHeader extends HTMLElement{
+    connectedCallback() {
+        this.innerHTML='            <div class="header">
                 <a href="https://bigdanshemporium.com/"><image src="Various-assets/bigdan.png" width="250" height="200" class="bigdan"></image></a>
                 <input type="text" placeholder="What can we help you with?">
                 <image class="search-icon" src="Various-assets/information.png" width="43" height="40"></image>
@@ -50,22 +43,13 @@
                         </li>                
                     </ul>
                 </div>    
-            </div>
-        </special-header>
-        <div class="sub-heading">
-            <p>!!!ENJOY FREE SHIPPING ALL MONTH LONG!!!</p>
-        </div>
-        <div class="clickable-image-links">
-            <a>Edibles</a>
-            <a>Vapes/Smokeables</a>
-            <a>Gummies</a>
-            <a>CBD</a>
-        </div> 
-        <div class="footer">
-            <special-footer>
+            </div>'
+    }
+}
 
-            </special-footer>
-        </div>
-        <script src="HeaderFooterManager.js"></script>
-    </body>
-</html>
+class SpecialFooter extends HTMLElement{
+    connectedCallback() {}
+}
+
+customElements.define('special-header', SpecialHeader)
+customElements.define('special-footer', SpecialFooter)
