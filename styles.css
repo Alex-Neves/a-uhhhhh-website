@@ -1,21 +1,22 @@
+/** HEADER AND HOMEPAGE CONTENT **/
+
 body{
-    background-color: rgb(255, 255, 255);
+    background-color:rgb(249, 238, 222);
     margin:0;
 }
 
 @font-face {
     font-family: Aerodynamic;
-    src: url(/Users/alexn/Desktop/Personal-Coding-Projects/zFirst-website/Various-assets/Aerodynamic-aGag.otf);
+    src: url(/Various-assets/Aerodynamic-aGag.otf);
 }
 
-.header{
+header{
     border-color: rgb(65, 114, 1);
     border-style: solid;
     background-color: rgb(56, 99, 0);
-    margin:0;
 }
 
-.header bigdan{
+header bigdan{
     align:left;
     margin: 0;
     padding: 0;
@@ -29,7 +30,7 @@ body{
     margin:0;
 }
 
-.header input[type=text]{
+header input[type=text]{
     border: none;
     font-size: 17px;
     height: 40px;
@@ -42,15 +43,16 @@ body{
 
 .sub-heading{
     color: rgb(135, 250, 119);
-    background:none;
+    background-color: rgb(4, 52, 0);
     font-size: xx-large;
     text-align: center;
     border-bottom: solid;
     border:none;
     font-family: Aerodynamic;
+    margin: 0;
 }
 
-button{
+li button{
     font-size: x-large;
     border:none;
     font-family: 'Aerodynamic', sans-serif;
@@ -59,7 +61,7 @@ button{
     -webkit-text-fill-color: transparent;
 }
 
-button:hover{
+li button:hover{
     font-size: x-large;
     border:none;
     font-family: 'Aerodynamic', sans-serif;
@@ -70,8 +72,8 @@ button:hover{
 
 .navbar{
     border:none;
-    margin: 0;
-    width: 100%;
+    margin: none;
+    width:99.9%;
     display: inline-block;
     border-color: rgb(65, 114, 1);
     border-style: solid;
@@ -80,12 +82,13 @@ button:hover{
 }
 
 ul{
-    list-style-type:none;
-    margin:8px;
     text-align: center;
+    margin: none;
+    padding: 0;
 }
 
 li{
+    text-align: center;
     display: inline;
     padding-left: 15px;
     padding-right: 15px;
@@ -127,3 +130,28 @@ li{
     color: white;
     transition: 500ms;
 }
+
+footer{
+    border:none;
+    color: #000000;
+    background-color: rgb(96, 96, 96);
+    color:white;
+    position: absolute;
+    bottom:0;
+    align:left;
+    width:99.99%;
+    font-family: 'Aerodynamic', sans-serif;
+}
+
+/** HEADER, HOMEPAGE, FOOTER CONTENT **/
+
+/** ABOUT US FORMATTING **/
+.side-nav a, button{
+    border:none;
+    background:none;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Aerodynamic', sans-serif;
+
+}
+/** ABOUT US FORMATTING **/
