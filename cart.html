@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <Title>Test Site</Title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+        });
+        </script> 
+
+    <body>
+        <div id="header"></div>        
+        <div class="side-nav">
+                <a href="test-site.html">Home</a>
+                <a>/</a>
+                <a href="cart.html">Your Cart</a>
+        </div>
+        <div id="footer"></div>
+    </body>

@@ -21,10 +21,38 @@ header{
     background-color: rgb(56, 99, 0);
 }
 
-header bigdan{
+.bigdan{
     align:left;
     margin: 0;
     padding: 0;
+}
+
+.cart{
+    position: fixed;
+    top:80px;
+    right:150px;
+}
+
+.cart p{
+    display:none;
+}
+
+.cart:hover{
+    background-color: white;
+    z-index:1;
+}
+
+.cart a{
+    margin-right: 100px;
+}
+
+.cart:hover p{
+    display: block;
+    background-color: white;
+    color: #000000;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .search-icon{
@@ -35,8 +63,8 @@ header bigdan{
     margin:0;
 }
 
-header input[type=text]{
-    border: none;
+.searchbar{
+    border: 0px;
     font-size: 17px;
     height: 40px;
     width: 25%;
@@ -99,7 +127,7 @@ header input[type=text]{
     position: relative;
   }
 
-  .dropdown-content {
+.dropdown-content {
     display:none;
     position: absolute;
     width: 99.9%;
