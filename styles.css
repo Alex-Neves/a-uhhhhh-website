@@ -6,6 +6,11 @@ body{
 }
 
 @font-face {
+    font-family: Nimbus;
+    src: url(/Various-assets/NimbusRomNo9L-Med.otf);
+}
+
+@font-face {
     font-family: Aerodynamic;
     src: url(/Various-assets/Aerodynamic-aGag.otf);
 }
@@ -52,25 +57,9 @@ header input[type=text]{
     margin: 0;
 }
 
-li button{
-    font-size: x-large;
-    border:none;
-    font-family: 'Aerodynamic', sans-serif;
-    background: -webkit-linear-gradient(yellow, #b05200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-li button:hover{
-    font-size: x-large;
-    border:none;
-    font-family: 'Aerodynamic', sans-serif;
-    background: -webkit-linear-gradient(rgb(151, 151, 0), #6b3200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .navbar{
+    text-align: center;
+    display: inline;
     border:none;
     margin: none;
     width:99.9%;
@@ -81,20 +70,28 @@ li button:hover{
     background-color: rgb(76, 131, 4);
 }
 
-ul{
-    text-align: center;
-    margin: none;
-    padding: 0;
-}
-
-li{
-    text-align: center;
-    display: inline;
+.navbar button{
+    font-size: x-large;
+    border:none;
+    font-family: 'Aerodynamic', sans-serif;
+    background: -webkit-linear-gradient(yellow, #b05200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 7px;
     padding-bottom: 7px;
+    margin: 5px;
+}
 
+.navbar button:hover{
+    font-size: x-large;
+    border:none;
+    font-family: 'Aerodynamic', sans-serif;
+    background: -webkit-linear-gradient(rgb(151, 151, 0), #6b3200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .dropdown {
@@ -103,32 +100,35 @@ li{
   }
 
   .dropdown-content {
-    display: none;
+    display:none;
     position: absolute;
-    width: auto;
-    overflow: auto;
+    width: 99.9%;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    background-color: rgb(76, 131, 4);
-    border-color: rgb(65, 114, 1);
+    z-index: 1;
 }
 
 .dropdown-content a {
+    background-color: rgba(76, 131, 4, 100%);
+    border-color: rgb(65, 114, 1);
     display: block;
     color: #000000;
     padding: 5px;
     text-decoration: none;
     font-family: 'Aerodynamic', sans-serif;
     text-align: left;
-    
 }
 
 .dropdown-content a:hover{
-    background-color: rgb(23, 41, 0);
+    background-color: rgba(23, 41, 0, 100%);
     color: white;
     transition: 500ms;
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Aerodynamic', sans-serif;
+    text-align: left;
 }
 
 footer{
@@ -140,18 +140,29 @@ footer{
     bottom:0;
     align:left;
     width:99.99%;
-    font-family: 'Aerodynamic', sans-serif;
+    font-family: 'Nimbus', sans-serif;
 }
 
 /** HEADER, HOMEPAGE, FOOTER CONTENT **/
 
 /** ABOUT US FORMATTING **/
-.side-nav a, button{
+.side-nav button, .side-nav a{
     border:none;
     background:none;
     text-decoration: none;
     color: #000000;
     font-family: 'Aerodynamic', sans-serif;
-
+    position: relative;
 }
+
+.side-nav li{
+    display: inline-block;
+}
+
+.side-nav{
+    position:fixed;
+    top:300px;
+    left:35px;
+}
+
 /** ABOUT US FORMATTING **/
