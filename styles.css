@@ -3,6 +3,8 @@
 body{
     background-color:rgb(249, 238, 222);
     margin:0;
+    width:auto;
+    border:none;
 }
 
 @font-face {
@@ -15,65 +17,6 @@ body{
     src: url(/Various-assets/Aerodynamic-aGag.otf);
 }
 
-header{
-    border-color: rgb(65, 114, 1);
-    border-style: solid;
-    background-color: rgb(56, 99, 0);
-}
-
-.bigdan{
-    align:left;
-    margin: 0;
-    padding: 0;
-}
-
-.cart{
-    position: fixed;
-    top:80px;
-    right:150px;
-}
-
-.cart p{
-    display:none;
-}
-
-.cart:hover{
-    background-color: white;
-    z-index:1;
-}
-
-.cart a{
-    margin-right: 100px;
-}
-
-.cart:hover p{
-    display: block;
-    background-color: white;
-    color: #000000;
-    font-size: large;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.search-icon{
-    position: fixed;
-    top:81px;
-    left:350px;
-    background:none;
-    margin:0;
-}
-
-.searchbar{
-    border: 0px;
-    font-size: 17px;
-    height: 40px;
-    width: 25%;
-    padding-left: 60px;
-    position: fixed;
-    top:80px;
-    left:350px;
-}
-
 .sub-heading{
     color: rgb(135, 250, 119);
     background-color: rgb(4, 52, 0);
@@ -83,80 +26,7 @@ header{
     border:none;
     font-family: Aerodynamic;
     margin: 0;
-}
-
-.navbar{
-    text-align: center;
-    display: inline;
-    border:none;
-    margin: none;
-    width:99.9%;
-    display: inline-block;
-    border-color: rgb(65, 114, 1);
-    border-style: solid;
-    border-top: none;
-    background-color: rgb(76, 131, 4);
-}
-
-.navbar button{
-    font-size: x-large;
-    border:none;
-    font-family: 'Aerodynamic', sans-serif;
-    background: -webkit-linear-gradient(yellow, #b05200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: left;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    margin: 5px;
-}
-
-.navbar button:hover{
-    font-size: x-large;
-    border:none;
-    font-family: 'Aerodynamic', sans-serif;
-    background: -webkit-linear-gradient(rgb(151, 151, 0), #6b3200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.dropdown {
-    display: inline-block;
     position: relative;
-  }
-
-.dropdown-content {
-    display:none;
-    position: absolute;
-    width: 99.9%;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    background-color: rgba(76, 131, 4, 100%);
-    border-color: rgb(65, 114, 1);
-    display: block;
-    color: #000000;
-    padding: 5px;
-    text-decoration: none;
-    font-family: 'Aerodynamic', sans-serif;
-    text-align: left;
-}
-
-.dropdown-content a:hover{
-    background-color: rgba(23, 41, 0, 100%);
-    color: white;
-    transition: 500ms;
-    padding: 5px;
-    text-decoration: none;
-    font-family: 'Aerodynamic', sans-serif;
-    text-align: left;
 }
 
 footer{
@@ -167,13 +37,13 @@ footer{
     position: absolute;
     bottom:0;
     align:left;
-    width:99.99%;
     font-family: 'Nimbus', sans-serif;
+    width:100%;
 }
 
 /** HEADER, HOMEPAGE, FOOTER CONTENT **/
 
-/** ABOUT US FORMATTING **/
+/** side-nav configuration **/
 .side-nav button, .side-nav a{
     border:none;
     background:none;
@@ -185,12 +55,13 @@ footer{
 
 .side-nav li{
     display: inline-block;
+    position: relative;
 }
 
 .side-nav{
-    position:fixed;
-    top:300px;
-    left:35px;
+    position:relative;
+    margin-top: 10px;
+    margin-left:20px;
 }
 
-/** ABOUT US FORMATTING **/
+/** side-nav configuration **/
