@@ -5,23 +5,10 @@ body{
     margin:0;
     width:auto;
     border:none;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 285px 40px 1fr 1fr, 250px;
-}
-
-#header{
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-
-
-#footer{
-    grid-row: 4;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+    justify-content: center;
 }
 
 .sub-heading{
@@ -29,16 +16,12 @@ body{
     background-color: rgb(4, 52, 0);
     font-size: xx-large;
     text-align: center;
-    border-bottom: solid;
-    border:none;
     font-family: Aerodynamic;
-    margin: 0;
-    display:inline-block;
-    position: relative;
     width:100%;
-    grid-row: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
+}
+
+#footer{
+    margin-top: auto;
 }
 
 @font-face {
@@ -75,16 +58,52 @@ body{
     grid-column: 1;
 }
 
-.content-grid{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.container{
+    display: inline-block;
+    width:fit-content;
+    text-align: center;
 }
 
-.content-grid p{
+.big-dan-logo{
+    float: left;
+    shape-outside:content-box;
+
+}
+
+.container h1{
+    font-family: 'Aerodynamic';
+    font-size: xxx-large;
+    margin-right: 70%;
+}
+
+.container h2{
+    font-family: 'Aerodynamic';
+    text-align: center;
+    font-size: xx-large;
+}
+
+.container p{
     text-align: center;
     font-family: 'Aerodynamic';
-    font-size:large;
+    font-size:130%;
+    margin-right: 5%;
+}
+
+.funny-button{
+    padding: 2%;
+    margin-bottom: 2%;
+    background-color: rgb(56, 99, 0);
+    border: none;
+    
+}
+
+.funny-button a{
+    font-family: 'Aerodynamic', sans-serif;
+    background: -webkit-linear-gradient(yellow, #b05200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: x-large;
 }
 
 /** side-nav configuration **/
