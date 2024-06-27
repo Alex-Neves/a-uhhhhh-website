@@ -1,5 +1,5 @@
-import './app.scss'
-import Header from './Header.jsx'
+import './global.scss'
+import Header from './header.jsx'
 
 function App() {
   return (
