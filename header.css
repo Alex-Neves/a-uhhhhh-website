@@ -5,18 +5,16 @@ header{
 }
 
 .top-header-content{
-    display:flex;
-    justify-content:first baseline;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap:10%;
 }
 
 .sign-in{
     display:block;
     color: black;
     font-family: 'Aerodynamic', sans-serif;
-    margin-left: 5%;
-    font-size: large;
+    font-size: 2.5vh;
 }
 
 .sign-in a{
@@ -26,8 +24,7 @@ header{
 }
 
 .cart{
-    margin-left: 5%;
-    margin-right:5%;
+    margin-right: 10%;
 }
 
 .cart p{
@@ -35,7 +32,7 @@ header{
 }
 
 .search-bar-container{
-    width:70%;
+    width:30%;
 }
 
 .search-bar-container input{
@@ -59,7 +56,7 @@ header{
 }
 
 .sitedirection {
-    font-size: x-large;
+    font-size: 2.5vh;
     border:none;
     font-family: 'Aerodynamic', sans-serif;
     background: -webkit-linear-gradient(yellow, #b05200);
@@ -72,7 +69,6 @@ header{
 }
 
 .sitedirection:hover{
-    font-size: x-large;
     border:none;
     font-family: 'Aerodynamic', sans-serif;
     background: -webkit-linear-gradient(rgb(151, 151, 0), #6b3200);
@@ -83,7 +79,7 @@ header{
 .dropdown {
     display: inline-block;
     position: relative;
-  }
+}
 
 .dropdown-content {
     display:none;

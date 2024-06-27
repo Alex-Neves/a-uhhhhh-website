@@ -1,9 +1,17 @@
-/**HOMEPAGE**/
+@font-face {
+    font-family: Nimbus;
+    src: url(/Various-assets/NimbusRomNo9L-Med.otf);
+}
+
+@font-face {
+    font-family: Aerodynamic;
+    src: url(/Various-assets/Aerodynamic-aGag.otf);
+}
 
 body{
     background-color:rgb(249, 238, 222);
     margin:0;
-    width:auto;
+    width:100%;
     border:none;
     display:flex;
     flex-direction: column;
@@ -14,28 +22,14 @@ body{
 .sub-heading{
     color: rgb(135, 250, 119);
     background-color: rgb(4, 52, 0);
-    font-size: xx-large;
+    font-size: 3.75vh;
     text-align: center;
     font-family: Aerodynamic;
     width:100%;
 }
 
-#footer{
-    margin-top: auto;
-}
-
-@font-face {
-    font-family: Nimbus;
-    src: url(/Various-assets/NimbusRomNo9L-Med.otf);
-}
-
-@font-face {
-    font-family: Aerodynamic;
-    src: url(/Various-assets/Aerodynamic-aGag.otf);
-}
-/**HOMEPAGE**/
-
 /** side-nav configuration **/
+
 .side-nav button, .side-nav a{
     border:none;
     background:none;
@@ -58,10 +52,13 @@ body{
     grid-column: 1;
 }
 
+/** side-nav configuration **/
+
 .container{
     display: inline-block;
     width:fit-content;
     text-align: center;
+    margin-bottom: 1%;
 }
 
 .big-dan-logo{
@@ -72,29 +69,58 @@ body{
 
 .container h1{
     font-family: 'Aerodynamic';
-    font-size: xxx-large;
-    margin-right: 70%;
+    font-size: 5vh;
+    text-align: left;
+    margin-left:5%
 }
 
 .container h2{
     font-family: 'Aerodynamic';
     text-align: center;
-    font-size: xx-large;
+    font-size: 4vh;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .container p{
     text-align: center;
     font-family: 'Aerodynamic';
-    font-size:130%;
-    margin-right: 5%;
+    font-size: 2.5vh;
+    margin-left: 15%;
+    margin-right: 15%;
 }
+
+.container a{
+    color: rgb(48, 48, 250);
+}
+
+.container a:visited{
+    color: rgb(48, 48, 250);
+}
+
+video{
+    margin-bottom: 2%;
+}
+
+.club420{
+    background: -webkit-linear-gradient(yellow, #b05200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.broccoli{
+    background: -webkit-linear-gradient(rgb(138, 0, 111), #fda95f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/** Shop Button For About Us**/
 
 .funny-button{
     padding: 2%;
-    margin-bottom: 2%;
     background-color: rgb(56, 99, 0);
     border: none;
-    
+    margin-bottom: 2%;
 }
 
 .funny-button a{
@@ -106,4 +132,30 @@ body{
     font-size: x-large;
 }
 
-/** side-nav configuration **/
+/** Shop Button For About Us**/
+
+.contact{
+    padding: 2%;
+    width: 15%;
+    margin-bottom: 2%;
+    background-color: rgb(56, 99, 0);
+    border: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contact a{
+    background: -webkit-linear-gradient(yellow, #b05200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+    font-size: 2vh;
+    font-family: 'Aerodynamic';
+}
+
+#footer{
+    margin-top: auto;
+}
+/**HOMEPAGE**/
+
+
