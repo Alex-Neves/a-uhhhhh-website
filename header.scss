@@ -2,8 +2,78 @@
     border-color: rgb(65, 114, 1);
     border-style: solid;
     background-color: rgb(56, 99, 0);
-    margin: 0;
+
     img{
-        max-width: 15%;
+        width: 30vh;
     }
+
+    input[type='search']{
+        width: 60vh;
+        height: 5vh;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+        font-size: 2vh;
+    }
+
+    p{
+        font-size: 2.5vh;
+        font-family: 'Aerodynamic';
+        display: inline-block;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+.navbar{
+    background-color: rgb(76, 131, 4);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.subnav-link{
+    font-size: 3vh;
+    border:none;
+    font-family: 'Aerodynamic', sans-serif;
+    background: -webkit-linear-gradient(yellow, #b05200);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subnav-link:hover{
+    background: -webkit-linear-gradient(rgb(192, 192, 0), #793800);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sign-in-options{
+    width:22vh;
+    margin-right: 5%;
+}
+
+.ImgLink{
+    margin: 0;
+    width: 30vh;
+}
+
+.Header-Link{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.5vh;
+    font-family: 'Aerodynamic';
+}
+
+.Header-Link:hover{
+    color: rgb(86, 86, 86);
+}
+
+.Top-Header-Content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }

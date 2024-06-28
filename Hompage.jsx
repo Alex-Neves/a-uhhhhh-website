@@ -1,10 +1,11 @@
+
 import './global.scss'
 import Header from './header.jsx'
 
-function App() {
+function Homepage() {
   return (
     <Header/>
   )
 }
 
-export default App
+export default Homepage

@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'Aerodynamic';
+    src: local(Aerodynamic), url(./assets/Fonts/Aerodynamic-aGag.otf) format("opentype");
+}
+
 html{
+    background-color: rgb(249, 238, 222);
     body{
         padding: 0;
         margin: 0;
